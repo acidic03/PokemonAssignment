@@ -36,8 +36,8 @@
                return;
             }
 
-            // save the name for later use
-            const pokemonName = input.value.toLowerCase();
+            // trim leading and trailing spaces from name
+            const pokemonName = input.value.toLowerCase().trim();
             const fetchUrl = baseUrl + pokemonName;
 
             // preform call to server
